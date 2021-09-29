@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200;400;600;700&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Yaldevi', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* ****************************************************************** */
+/* **********Latyout ************** */
+/* ****************************************************************** */
+.header{grid-area: header;}
+.main{grid-area: main;}
+.foo{grid-area: foo;}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:'header'
+                        'main';
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px auto ;
+}
+.header
+{
+    background-color: rgb(33,37,41);
+    border-bottom: 1px solid rgb(141, 141, 141);
+    overflow: hidden;
+}
+
+.main
+{
+    overflow-y: auto;
+}
+.main>h1{
+    position: relative;
+    text-align: center;
+}
+
+
+.foo{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(33,37,41);
+}
+
+/* ****************************************************************** */
+/* **********FLEX ITEMS CARD ************** */
+/* ****************************************************************** */
+
+.main__list_item
+{
+    position: relative;
+    display: grid;
+
+}
+.main__list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(15rem,1fr));
+    gap: 1rem;
+    margin: 32px;
+}
+.main::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    /* Ocultar scroll */
+}
+.main::-webkit-scrollbar-thumb {
+    background: rgb(150, 150, 150);
+    border-radius: 10px;
+}
+.main::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.main::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+
+/* ****************************************************************** */
+/* **********                           CONTACTO         ************** */
+/* ****************************************************************** */
+/* ****************************************************************** */
+/* **********                            CONTACTO           ************** */
+/* ****************************************************************** */
+.main__contacto{
+    display: flex;
+}
+.main__contacto__img> img{
+    width: 100%;
+    height: 100%;
+}
+.main__contacto__email
+{
+    display: flex;
+    flex-flow: column nowrap;
+    color:rgb(0, 0, 0);
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    padding-left:40px ;
+    padding-right: 40px;
+}
+.contacto__email
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.contacto__email>input
+{
+    width: 50%;
+    padding: 10px;
+    border-style: none;
+    border-radius: 4px 0 0 4px;
+}
+.contacto__submit
+{
+  
+    border-radius: 0 4px 4px 0 ;
+    border-style: solid;
+    width: 43px;
+}
+
+
+
+
+.contacto__email > p{
+    font-size: 1rem;
+}
+
+
+.contacto__email > p{
+    font-size: 1rem;
+}
+
+body > div > main > footer > div.foo__contacto > div.social__link
+{
+    font-size: 24px;
+}
+.social__link >li >i {
+    color: white;
+}
+.social__link a i
+{
+    color: white;
+}
+
+
+
+.main__footer
+{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120xp;
+    background-color:rgb(33,37,41) ;
+}
+.main__footer p 
+{
+    color: white;
+}
+
+/* ****************************************************************** */
+/* **********ESTILO DEL CARD DE LOS ITEMS ************** */
+/* ****************************************************************** */
+
+
+.card__img
+{
+    position: relative;
+    height: 200px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%,-50%); */
+    border-radius: 4px;
+    transition: all .1s ease-in-out;
+    background-color:  rgba(0, 0, 0, 0.46);
+}
+.card__img:hover
+{
+    transform:  scale(1.02); 
+    transition: all .1s ease-in-out;
+}
+/* .card__img:focus{
+     
+} */
+
+.card__img img
+{
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    border-top: 4px solid rgba(0, 0, 0, 0.46);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.46);
+
+}
+.card__info
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: transparent;
+    top:0 ;
+    opacity: 0;
+    transform: translate(0, 15px);
+    transition: all .3s;
+    cursor: pointer;
+  
+}
+.card__info:hover{
+    opacity: 1;
+    color: white;
+    transition: all .3s ease-in-out;
+    transform: translate(0, 0px);
+    
+}
+
+
+.card__info__item
+{
+    
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+
+
+    width: 140px;
+    height: 33%;
+    bottom: 4px;
+    right: 0;
+    
+    background-color: rgba(0, 0, 0, 0.50);    
+    border-radius: 4px 0px 0px 0px;
+    padding: 5px;
+
+    font-size: .9rem;
+   
+}
+.card__info__item ol
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+/* ****************************************************************** */
+/* **********************LINK NAVBAR                    ************* */
+/* ****************************************************************** */
+
+.menu__container>h1{color: white;}
+
+.menu__container{
+display:flex;
+justify-content: space-between;
+width:90%;
+max-width:1200px;
+height:100%;
+align-items:center;
+margin: 0 auto;
+}
+
+.menu__links{
+	padding: 0 30px;
+	display: flex;
+	height: 100%;
+	align-items:center;
+    color: white;
+}
+
+
+.menu__link{
+    color: white;
+    margin-right: 30px;
+}
+
+.menu__link:hover
+{
+    border-bottom: 1px solid white;
+    padding: 5px 0;
+   
+}
+
+
+
+
+
+/* ****************************************************************** */
+/* **********MEDIA QUERIES                          ************** */
+/* ****************************************************************** */
+@media screen and (max-width:576px) {
+    .card__info{
+        opacity: 1;
+         transform: translate(0, 0px); 
+    }
+    .container{
+     
+      grid-template-rows: 80px auto ;
+    }
+
+    .menu__container{
+        display:flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        width:90%;
+        max-width:1200px;
+        height:100%;
+        align-items:center;
+        margin: 0 auto;
+        }
+/* ****************************************************************** */
+/* **********           CONTACTOS                      ************** */
+/* ****************************************************************** */
+.main__contacto{
+    width: 100%;
+    height: 100vh;
+}
+.main__contacto__img> img{
+    width: 100%;
+    height: 100%;
+}
+.main__contacto__email
+{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+
+    color:rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.33);
+    color: white;
+  
+
+    width: 100%;
+    height: 100%;
+  
+    padding-left:40px ;
+    padding-right: 40px;
+    margin-right:auto;
+    margin-left:auto;
+
+}
+.contacto__email > p{
+    font-size: .7rem;
+}
+
+
+
+}
+@media  screen and (min-width:768px) {
+
+
+
+/* ****************************************************************** */
+/* **********           CONTACTOS                      ************** */
+/* ****************************************************************** */
+/* ****************************************************************** */
+/* **********           CONTACTOS                      ************** */
+/* ****************************************************************** */
+
+.main__contacto{
+    width: 100%;
+    height: 100vh;
+}
+.contacto__email > p{
+        font-size: .7rem;
+    }
+    
+    
+}
+@media  screen and (min-width:992px) {
+    .main__list{
+    grid-template-columns: repeat(auto-fill,minmax(20rem,1fr));
+
+    }
+
+
+/* ****************************************************************** */
+/* **********           CONTACTOS                      ************** */
+/* ****************************************************************** */
+/* ****************************************************************** */
+/* **********           CONTACTOS                      ************** */
+/* ****************************************************************** */
+
+    
+    .main__contacto__email{
+        background-color: rgb(33,37,41);
+        color:white;
+    }
+}
+
