@@ -12,7 +12,16 @@
 }
 
 /* ****************************************************************** */
-/* **********Latyout ************** */
+/* **********LATYOUT EN INDEX                           ************** */
+/* ****************************************************************** */
+/* ****************************************************************** */
+/* **********LATYOUT EN INDEX                           ************** */
+/* ****************************************************************** */
+/* ****************************************************************** */
+/* **********LATYOUT EN INDEX                           ************** */
+/* ****************************************************************** */
+/* ****************************************************************** */
+/* **********LATYOUT EN INDEX                           ************** */
 /* ****************************************************************** */
 .header{grid-area: header;}
 .main{grid-area: main;}
@@ -41,17 +50,85 @@
     position: relative;
     text-align: center;
 }
-
+/* 
 
 .foo{
     width: 100%;
     height: 100%;
     background-color: rgb(33,37,41);
+} */
+
+
+.main__footer
+{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120xp;
+    background-color:rgb(33,37,41) ;
+}
+.main__footer p 
+{
+    color: white;
+}
+
+
+
+
+/* ****************************************************************** */
+/* **********************LINK NAVBAR                    ************* */
+/* ****************************************************************** */
+
+/* ****************************************************************** */
+/* **********************LINK NAVBAR                    ************* */
+/* ****************************************************************** */
+
+.menu__container>h1{color: white;}
+
+.menu__container{
+display:flex;
+justify-content: space-between;
+width:90%;
+max-width:1200px;
+height:100%;
+align-items:center;
+margin: 0 auto;
+}
+
+.menu__links{
+	padding: 0 30px;
+	display: flex;
+	height: 100%;
+	align-items:center;
+    color: white;
+}
+
+
+.menu__link{
+    color: white;
+    margin-right: 30px;
+}
+
+.menu__link:hover
+{
+    border-bottom: 1px solid white;
+    padding: 5px 0;
+   
 }
 
 /* ****************************************************************** */
-/* **********FLEX ITEMS CARD ************** */
+/* **********FLEX ITEMS LIST CARD ************** */
 /* ****************************************************************** */
+/* ****************************************************************** */
+/* **********FLEX ITEMS LIST CARD ************** */
+/* ****************************************************************** */
+/* ****************************************************************** */
+/* **********FLEX ITEMS LIST CARD ************** */
+/* ****************************************************************** */
+
 
 .main__list_item
 {
@@ -66,10 +143,24 @@
     gap: 1rem;
     margin: 32px;
 }
+
+
+
+
+
+/* ****************************************************************** */
+/* ********** SCROLLBAR SCROLLBAR SCROLLBAR SCROLLBAR ************** */
+/* ****************************************************************** */
+
+
+/* ****************************************************************** */
+/* ******* SCROLLBAR SCROLLBAR SCROLLBAR SCROLLBAR ************** */
+/* ****************************************************************** */
+
+
 .main::-webkit-scrollbar {
     width: 8px;     /* Tamaño del scroll en vertical */
     height: 8px;    /* Tamaño del scroll en horizontal */
-    /* Ocultar scroll */
 }
 .main::-webkit-scrollbar-thumb {
     background: rgb(150, 150, 150);
@@ -84,11 +175,17 @@
 }
 
 
+/* *****************************************************************    * */
+/* **********                           CONTACTO         ***********    * */
+/* *****************************************************************    * */
+/* *****************************************************************    * */
+/* **********                            CONTACTO           *********   * */
 /* ****************************************************************** */
-/* **********                           CONTACTO         ************** */
+/* *****************************************************************    * */
+/* **********                            CONTACTO           *********   * */
 /* ****************************************************************** */
-/* ****************************************************************** */
-/* **********                            CONTACTO           ************** */
+/* *****************************************************************    * */
+/* **********                            CONTACTO           *********   * */
 /* ****************************************************************** */
 .main__contacto{
     display: flex;
@@ -129,9 +226,6 @@
     width: 43px;
 }
 
-
-
-
 .contacto__email > p{
     font-size: 1rem;
 }
@@ -155,21 +249,10 @@ body > div > main > footer > div.foo__contacto > div.social__link
 
 
 
-.main__footer
-{
-    position: relative;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 120xp;
-    background-color:rgb(33,37,41) ;
-}
-.main__footer p 
-{
-    color: white;
-}
+
+/* ****************************************************************** */
+/* **********ESTILO DEL CARD DE LOS ITEMS ************** */
+/* ****************************************************************** */
 
 /* ****************************************************************** */
 /* **********ESTILO DEL CARD DE LOS ITEMS ************** */
@@ -180,10 +263,6 @@ body > div > main > footer > div.foo__contacto > div.social__link
 {
     position: relative;
     height: 200px;
-    /* position: absolute;
-    top: 50%;
-    left: 50%; */
-    /* transform: translate(-50%,-50%); */
     border-radius: 4px;
     transition: all .1s ease-in-out;
     background-color:  rgba(0, 0, 0, 0.46);
@@ -193,10 +272,6 @@ body > div > main > footer > div.foo__contacto > div.social__link
     transform:  scale(1.02); 
     transition: all .1s ease-in-out;
 }
-/* .card__img:focus{
-     
-} */
-
 .card__img img
 {
     width: 100%;
@@ -261,42 +336,6 @@ body > div > main > footer > div.foo__contacto > div.social__link
 
 
 
-/* ****************************************************************** */
-/* **********************LINK NAVBAR                    ************* */
-/* ****************************************************************** */
-
-.menu__container>h1{color: white;}
-
-.menu__container{
-display:flex;
-justify-content: space-between;
-width:90%;
-max-width:1200px;
-height:100%;
-align-items:center;
-margin: 0 auto;
-}
-
-.menu__links{
-	padding: 0 30px;
-	display: flex;
-	height: 100%;
-	align-items:center;
-    color: white;
-}
-
-
-.menu__link{
-    color: white;
-    margin-right: 30px;
-}
-
-.menu__link:hover
-{
-    border-bottom: 1px solid white;
-    padding: 5px 0;
-   
-}
 
 
 
@@ -365,6 +404,17 @@ margin: 0 auto;
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
 @media  screen and (min-width:768px) {
 
 
