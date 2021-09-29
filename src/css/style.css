@@ -89,7 +89,7 @@
 
 
 /* ****************************************************************** */
-/* **********FOOTER                                      ************** */
+/* **********                           FOOTER         ************** */
 /* ****************************************************************** */
 
 .foo{
@@ -139,10 +139,14 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-self: center;
+    align-items: center;
     width: 100%;
     height: 120xp;
     background-color:rgb(33,37,41) ;
+}
+.main__footer p 
+{
+    color: white;
 }
 /* ****************************************************************** */
 /* **********ESTILO DEL CARD DE LOS ITEMS ************** */
@@ -200,12 +204,7 @@
     transform: translate(0, 0px);
     
 }
-@media screen and (max-width:500px ) {
-    .card__info{
-        opacity: 1;
-         transform: translate(0, 0px); 
-    }
-}
+
 
 .card__info__item
 {
@@ -244,6 +243,7 @@
 /* ****************************************************************** */
 
 .menu__container>h1{color: white;}
+
 .menu__container{
 display:flex;
 justify-content: space-between;
@@ -283,27 +283,19 @@ margin: 0 auto;
 /* **********MEDIA QUERIES                          ************** */
 /* ****************************************************************** */
 @media screen and (max-width:576px) {
+    .card__info{
+        opacity: 1;
+         transform: translate(0, 0px); 
+    }
+
+
     
+/* ****************************************************************** */
+/* **********           CONTACTOS                      ************** */
+/* ****************************************************************** */
+.foo__contacto > p{
+    font-size: .9rem;
 }
-@media  screen and (min-width:768px) {
-
-}
-@media  screen and (min-width:992px) {
-    .main__list
-{
-    grid-template-columns: repeat(auto-fill,minmax(25rem,1fr));
-}
-
-}
-@media  screen and (min-width:992px) {
-    .main__list
-{
-    grid-template-columns: repeat(auto-fill,minmax(25rem,1fr));
-}
-
-}
-
-
 
 body > div > main > footer > div.foo__contacto > div.social__link
 {
@@ -316,3 +308,24 @@ body > div > main > footer > div.foo__contacto > div.social__link
 {
     color: white;
 }
+
+
+}
+@media  screen and (min-width:768px) {
+
+}
+@media  screen and (min-width:992px) {
+    .main__list{
+    grid-template-columns: repeat(auto-fill,minmax(20rem,25rem));
+}
+
+}
+@media  screen and (min-width:992px) {
+    .main__list{
+    grid-template-columns: repeat(auto-fill,minmax(20rem,1fr));
+}
+
+}
+
+
+
