@@ -1,4 +1,13 @@
+
+
+
+/*
+                    FUENTE DE GOOGLE
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200;400;600;700&display=swap');
+
+
 
 *
 {
@@ -7,7 +16,7 @@
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Yaldevi', sans-serif;
+    font-family: 'Yaldevi', sans-serif;/*<<<<<<<<<<<<<<<<<<<<< FUENTE Yaldevi */
     scroll-behavior: smooth;
 }
 
@@ -17,12 +26,7 @@
 /* ****************************************************************** */
 /* **********LATYOUT EN INDEX                           ************** */
 /* ****************************************************************** */
-/* ****************************************************************** */
-/* **********LATYOUT EN INDEX                           ************** */
-/* ****************************************************************** */
-/* ****************************************************************** */
-/* **********LATYOUT EN INDEX                           ************** */
-/* ****************************************************************** */
+
 .header{grid-area: header;}
 .main{grid-area: main;}
 .foo{grid-area: foo;}
@@ -104,12 +108,13 @@ margin: 0 auto;
 	height: 100%;
 	align-items:center;
     color: white;
+    gap: 24px;
+
 }
 
 
 .menu__link{
     color: white;
-    margin-right: 30px;
 }
 
 .menu__link:hover
@@ -120,13 +125,13 @@ margin: 0 auto;
 }
 
 /* ****************************************************************** */
-/* **********FLEX ITEMS LIST CARD ************** */
+/* ******************************FLEX ITEMS LIST CARD ************** */
 /* ****************************************************************** */
 /* ****************************************************************** */
-/* **********FLEX ITEMS LIST CARD ************** */
+/* ******************************FLEX ITEMS LIST CARD ************** */
 /* ****************************************************************** */
 /* ****************************************************************** */
-/* **********FLEX ITEMS LIST CARD ************** */
+/* ******************************FLEX ITEMS LIST CARD ************** */
 /* ****************************************************************** */
 
 
@@ -139,7 +144,7 @@ margin: 0 auto;
 .main__list
 {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(15rem,1fr));
+    /* grid-template-columns: repeat(auto-fill,minmax(25rem,1fr)); */
     gap: 1rem;
     margin: 32px;
 }
@@ -158,11 +163,12 @@ margin: 0 auto;
 /* ****************************************************************** */
 
 
-.main::-webkit-scrollbar {
-    width: 8px;     /* Tamaño del scroll en vertical */
+.main::-webkit-scrollbar,.main::-webkit-scrollbar-track {
+    width: 4px;     /* Tamaño del scroll en vertical */
     height: 8px;    /* Tamaño del scroll en horizontal */
 }
 .main::-webkit-scrollbar-thumb {
+
     background: rgb(150, 150, 150);
     border-radius: 10px;
 }
@@ -205,25 +211,30 @@ margin: 0 auto;
     padding-left:40px ;
     padding-right: 40px;
 }
-.contacto__email
+.contacto__email form
 {
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    flex-flow: row nowrap;
+    
 }
-.contacto__email>input
-{
-    width: 50%;
-    padding: 20px;
-    border-style: none;
-    border-radius: 4px 0 0 4px;
+
+#correo{ 
+    padding: 10px;
+    border-style: none;background-color: rgb(216, 216, 216);
 }
+
 .contacto__submit
 {
   
-    border-radius: 0 4px 4px 0 ;
-    border-style: solid;
-    width: 43px;
+    border-style: none;
+    width: 60px;
+    padding: 10px;
+    
+}
+.contacto__submit:hover{
+    background-color: rgb(175, 175, 175);
 }
 
 .contacto__email > p{
@@ -231,9 +242,7 @@ margin: 0 auto;
 }
 
 
-.contacto__email > p{
-    font-size: 1rem;
-}
+
 
 body > div > main > footer > div.foo__contacto > div.social__link
 {
@@ -332,18 +341,12 @@ body > div > main > footer > div.foo__contacto > div.social__link
 }
 
 
-
-
-
-
-
-
-
-
-
 /* ****************************************************************** */
 /* **********MEDIA QUERIES                          ************** */
 /* ****************************************************************** */
+
+
+
 @media screen and (max-width:576px) {
     .card__info{
         opacity: 1;
@@ -353,7 +356,10 @@ body > div > main > footer > div.foo__contacto > div.social__link
      
       grid-template-rows: 80px auto ;
     }
-
+    .menu__links
+    {
+        align-items: center;
+    }
     .menu__container{
         display:flex;
         flex-flow: column nowrap;
@@ -404,24 +410,23 @@ body > div > main > footer > div.foo__contacto > div.social__link
 
 
 }
+@media screen and (min-width:576px) {
 
 
+    .main__list{
+        grid-template-columns: 1fr 1fr;
+    
+        }
 
 
-
-
-
-
-
-
-
+}
 @media  screen and (min-width:768px) {
 
 
-
-/* ****************************************************************** */
-/* **********           CONTACTOS                      ************** */
-/* ****************************************************************** */
+    .main__list{
+        grid-template-columns: 1fr 1fr;
+    
+        }
 /* ****************************************************************** */
 /* **********           CONTACTOS                      ************** */
 /* ****************************************************************** */
@@ -432,28 +437,24 @@ body > div > main > footer > div.foo__contacto > div.social__link
 }
 .contacto__email > p{
         font-size: .7rem;
-    }
-    
-    
+    }    
 }
 @media  screen and (min-width:992px) {
-    .main__list{
-    grid-template-columns: repeat(auto-fill,minmax(20rem,1fr));
-
-    }
-
-
-/* ****************************************************************** */
-/* **********           CONTACTOS                      ************** */
-/* ****************************************************************** */
-/* ****************************************************************** */
-/* **********           CONTACTOS                      ************** */
-/* ****************************************************************** */
-
     
+
+    .main__list{
+        grid-template-columns: repeat(3,.8fr);
+    
+        }
+
+/* ****************************************************************** */
+/* **********           CONTACTOS                      ************** */
+/* ****************************************************************** */
     .main__contacto__email{
         background-color: rgb(33,37,41);
         color:white;
     }
+
+
 }
 
