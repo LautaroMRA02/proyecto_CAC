@@ -15,11 +15,11 @@ if( document.getElementById('mainLista')){
                     <div class="card__info">
                         <div class="card__info__item">
                             <p>1100 Bear </p>
-                            <p>${data1[1].lugar}</p>
+                            <p>${data1[i].direccion}</p>
                             <ol>
-                                <li><i class="fas fa-bed"></i> ${data1[1].camas}</li>
-                                <li><i class="fas fa-bath"></i> ${data1[1].banos}</li>
-                                <li><i class="fas fa-car"></i> ${data1[1].cochera}</li>
+                                <li><i class="fas fa-bed"></i> ${data1[i].camas}</li>
+                                <li><i class="fas fa-bath"></i> ${data1[i].banos}</li>
+                                <li><i class="fas fa-car"></i> ${data1[i].cochera}</li>
                             </ol>
                         </div>
                     </div>
@@ -45,11 +45,11 @@ if( document.getElementById('mainLista')){
                     <div class="card__info">
                         <div class="card__info__item">
                             <p>1100 Bear </p>
-                            <p>${data2[1].lugar}</p>
+                            <p>${data2[i].direccion}</p>
                             <ol>
-                                <li><i class="fas fa-bed"></i> ${data2[1].camas}</li>
-                                <li><i class="fas fa-bath"></i> ${data2[1].banos}</li>
-                                <li><i class="fas fa-car"></i> ${data2[1].cochera}</li>
+                             <!--<li><i class="fas fa-bed"></i> ${data2[i].camas}</li>-->
+                                <li><i class="fas fa-bath"></i> ${data2[i].banos}</li>
+                                <li><i class="fas fa-car"></i> ${data2[i].cochera}</li>
                             </ol>
                         </div>
                     </div>
