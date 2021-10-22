@@ -256,7 +256,7 @@ margin: 0 auto;
     right: 0;
     
     background-color: rgba(0, 0, 0, 0.50);    
-    border-radius: 4px 0px 0px 0px;
+    border-radius: px 0px 0px 0px;
     padding: 5px;
 
     font-size: .9rem;
@@ -279,12 +279,15 @@ margin: 0 auto;
     color: rgb(167, 165, 165);
 }
 .card__info > iframe {
-    height: 33%;
+    height: 40%;
     width: 140px;
-    position: absolute;
-    bottom:4px;
-    border-radius: 4px 4px 0 0;
-    left: 140px;
+    position: relative;
+    bottom:1rem;
+    border-radius:4px 0 0 0  ;
+    left: 100%;
+    bottom: -43%;
+    transform: translate(-100%,-43%);
+    opacity: .7;
 }
 /* *****************************************************************    * */
 /* **********                           CONTACTO         ***********    * */
