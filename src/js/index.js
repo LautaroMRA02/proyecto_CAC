@@ -1,7 +1,6 @@
 
 
 
-
 if( document.getElementById('mainLista')){
     var card =` <div class="main__list" >`
     for(let i=0; i<data1.length;i++){

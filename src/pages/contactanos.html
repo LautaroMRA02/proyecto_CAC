@@ -44,7 +44,10 @@
                     <img src="../assets/vintage-1149558_1280.jpg" alt="">
                 </div>
                 <div class="main__contacto__email">
-                    <h1>Contactanos</h1>
+                    <h1>Datos de
+                    <span>Contacto</span>
+                </h1>
+            
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum numquam odit, quaerat aspernatur
                         perferendis quod culpa non commodi, vero, labor</p>
                     <div class="social__link">
@@ -57,13 +60,17 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, deserunt libero. Iste quae sunt
                         praesentium distinctio necessitatibus natus, esse ?</p>
                     <div class="contacto__email">
-                    <form>
-                        <input type="email"  placeholder="Email" id="correo">
-                        <input type="submit" class="contacto__submit" value="enviar" onClick="validarCorreo(form.correo.value)"/>
+                    <form id="formulario">
+                        <input type="email"  placeholder="Email" id="correo" required>
+                        <input type="submit" id="contacto__submit" class="contacto__submit" value="enviar" onClick="validarCorreo(form.correo.value)"/>
+                       
                     </form>
+                    
                     </div>
 
-                 
+                    <div id="mensaje__input" class="mensaje__input-valid ">
+                        <p>valido</p>
+                    </div>
                 </div>
            
         
