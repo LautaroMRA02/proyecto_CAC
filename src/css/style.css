@@ -260,7 +260,7 @@ margin: 0 auto;
     padding: 5px;
 
     font-size: .9rem;
-   
+ 
 }
 .card__info__item ol
 {
@@ -268,8 +268,24 @@ margin: 0 auto;
     flex-direction: row;
     justify-content: space-around;
 }
+.card__info__item > p:nth-child(2)
+{
+    display: flex;
+    justify-content: space-between;
 
-
+}
+.card__info__item > p:nth-child(2):hover
+{
+    color: rgb(167, 165, 165);
+}
+.card__info > iframe {
+    height: 33%;
+    width: 140px;
+    position: absolute;
+    bottom:4px;
+    border-radius: 4px 4px 0 0;
+    left: 140px;
+}
 /* *****************************************************************    * */
 /* **********                           CONTACTO         ***********    * */
 /* *****************************************************************    * */
