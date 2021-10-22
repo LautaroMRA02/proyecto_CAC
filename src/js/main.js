@@ -12,14 +12,13 @@ function validarCorreo(correo){
     <p>valido!</p>
     `
     let validoNo = `
-    <p>No valido!</p>
+    <p>No valido! intente de nuevo.</p>
     `
     var mensaje = document.getElementById('mensaje__input')
     if(esValido==true){
         mensaje.className = "mensaje__input-valid mensaje__valido-si";
         mensaje.innerHTML = validoSi;
         formulario.reset()
-
         setTimeout(function(){
             mensaje.className = "mensaje__input-valid"
         },2000);
